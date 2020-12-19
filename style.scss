@@ -1,0 +1,45 @@
+//Font
+$primary-font: 'Karla', sans-serif;
+
+//Primary Colors
+$cyan: hsl(179, 62%, 43%);
+$bright-yellow: hsl(71, 73%, 54%);
+
+//Neutral Colors
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 150px auto;
+
+    .first-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .left-content {
+            width: 50%;
+        }
+
+        .right-content {
+            width: 50%;
+        }
+    }
+}
