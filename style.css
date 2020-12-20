@@ -24,6 +24,8 @@ body {
   font-family: "Karla", sans-serif;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-box-shadow: 5px 5px 20px lightgrey;
+          box-shadow: 5px 5px 20px lightgrey;
 }
 
 @media (max-width: 500px) {
@@ -55,7 +57,9 @@ body {
 }
 
 .main-container .first-content p {
+  margin-bottom: 0;
   color: #98a6bd;
+  line-height: 24px;
 }
 
 .main-container .second-content {
@@ -67,7 +71,6 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  min-height: 250px;
   color: white;
 }
 
@@ -118,6 +121,9 @@ body {
   border-radius: 5px;
   width: 100%;
   cursor: pointer;
+  margin: 20px 0 0 0;
+  -webkit-box-shadow: 2px 5px 10px darkcyan;
+          box-shadow: 2px 5px 10px darkcyan;
 }
 
 .main-container .second-content .right-content {
@@ -132,5 +138,10 @@ body {
     width: auto;
     padding: 30px;
   }
+}
+
+.main-container .second-content .right-content p {
+  color: #e5eff5;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
