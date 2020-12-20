@@ -7,7 +7,11 @@
   color: #3e52a3;
 }
 
-.container {
+body {
+  background-color: #e5eff5;
+}
+
+.main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,11 +19,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 500px;
+  max-width: 650px;
   margin: 150px auto;
+  font-family: "Karla", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.container .first-content {
+@media (max-width: 500px) {
+  .main-container {
+    margin: 20px;
+  }
+}
+
+.main-container .first-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,9 +40,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 40px;
+  background-color: white;
 }
 
-.container .second-content {
+.main-container .first-content h2 {
+  margin: 0 0 10px 0;
+  color: #2ab2af;
+}
+
+.main-container .first-content h3 {
+  margin-bottom: 0;
+  color: #c0df34;
+}
+
+.main-container .first-content p {
+  color: #98a6bd;
+}
+
+.main-container .second-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,13 +67,70 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  min-height: 250px;
+  color: white;
 }
 
-.container .second-content .left-content {
-  width: 50%;
+@media (max-width: 500px) {
+  .main-container .second-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.container .second-content .right-content {
+.main-container .second-content h3 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.main-container .second-content .left-content {
   width: 50%;
+  background-color: #2ab2af;
+  padding: 40px;
+}
+
+@media (max-width: 500px) {
+  .main-container .second-content .left-content {
+    width: auto;
+    padding: 30px;
+  }
+}
+
+.main-container .second-content .left-content .price {
+  color: #e5eff5;
+}
+
+.main-container .second-content .left-content span {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  margin-right: 8px;
+}
+
+.main-container .second-content .left-content .btn-signup {
+  color: white;
+  background-color: #c0df34;
+  font-family: "Karla", sans-serif;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-container .second-content .right-content {
+  width: 50%;
+  background-color: #2ab2af;
+  opacity: 70%;
+  padding: 40px;
+}
+
+@media (max-width: 500px) {
+  .main-container .second-content .right-content {
+    width: auto;
+    padding: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

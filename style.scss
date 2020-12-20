@@ -9,6 +9,18 @@ $bright-yellow: hsl(71, 73%, 54%);
 $light-gray: hsl(204, 43%, 93%);
 $grayish-blue: hsl(218, 22%, 67%);
 
+//Button
+@mixin btn-signup {
+    color: white;
+    background-color: $bright-yellow;
+    font-family: $primary-font;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -18,28 +30,96 @@ $grayish-blue: hsl(218, 22%, 67%);
     }
 }
 
-.container {
+body {
+    background-color: $light-gray;
+}
+
+.main-container {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 650px;
     margin: 150px auto;
+    font-family: $primary-font;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (max-width: 500px) {
+        margin: 20px;
+    } 
 
     .first-content {
         display: flex;
         flex-direction: column;
+        padding: 40px;
+        background-color: white;
+
+        h2 {
+            margin: 0 0 10px 0;
+            color: $cyan;
+        }
+
+        h3 {
+            margin-bottom: 0;
+            color: $bright-yellow;
+        }
+
+        p {
+            color: $grayish-blue;
+        }
     }
 
     .second-content {
         display: flex;
         flex-direction: row;
         width: 100%;
+        min-height: 250px;
+        color: white;
+        
+        @media (max-width: 500px) {
+            flex-direction: column;
+        } 
+
+        h3 {
+            margin: 0;
+            letter-spacing: 1px;
+        }
 
         .left-content {
             width: 50%;
+            background-color: $cyan;
+            padding: 40px; 
+
+            @media (max-width: 500px) {
+                width: auto;
+                padding: 30px;
+            } 
+
+            .price {
+                color: $light-gray;
+            }
+
+            span {
+                font-size: 25px;
+                font-weight: 700;
+                color: white;
+                margin-right: 8px;
+            }
+
+            .btn-signup {
+                @include btn-signup;
+            }
         }
 
         .right-content {
             width: 50%;
+            background-color: $cyan;
+            opacity: 70%;
+            padding: 40px;
+
+            @media (max-width: 500px) {
+                width: auto;
+                padding: 30px;
+            } 
         }
     }
 }
