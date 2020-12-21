@@ -46,6 +46,12 @@ body {
   background-color: white;
 }
 
+@media (max-width: 500px) {
+  .main-container .first-content {
+    padding: 20px;
+  }
+}
+
 .main-container .first-content h2 {
   margin: 0 0 10px 0;
   color: #2ab2af;
@@ -97,26 +103,46 @@ body {
 @media (max-width: 500px) {
   .main-container .second-content .left-content {
     width: auto;
-    padding: 30px;
+    padding: 20px;
   }
 }
 
-.main-container .second-content .left-content .price {
-  color: #e5eff5;
+.main-container .second-content .left-content .price-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0 0;
 }
 
-.main-container .second-content .left-content span {
-  font-size: 25px;
+.main-container .second-content .left-content .price-content .price {
+  font-size: 30px;
   font-weight: 700;
   color: white;
-  margin-right: 8px;
+  margin-right: 10px;
+}
+
+.main-container .second-content .left-content .price-content p {
+  margin: 0;
+  color: #e5eff5;
+  opacity: 70%;
+}
+
+.main-container .second-content .left-content p {
+  margin: 12px 0;
 }
 
 .main-container .second-content .left-content .btn-signup {
   color: white;
   background-color: #c0df34;
   font-family: "Karla", sans-serif;
-  padding: 15px;
+  padding: 20px;
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -124,6 +150,8 @@ body {
   margin: 20px 0 0 0;
   -webkit-box-shadow: 2px 5px 10px darkcyan;
           box-shadow: 2px 5px 10px darkcyan;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .main-container .second-content .right-content {
@@ -143,5 +171,7 @@ body {
 .main-container .second-content .right-content p {
   color: #e5eff5;
   line-height: 24px;
+  font-size: 15px;
+  opacity: 80%;
 }
 /*# sourceMappingURL=style.css.map */
