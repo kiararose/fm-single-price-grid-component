@@ -28,14 +28,22 @@ $grayish-blue: hsl(218, 22%, 67%);
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    font-family: $primary-font;
 
     a { 
-        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+        font-weight: bold;
+        color: $cyan;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }
 
 body {
     background-color: $light-gray;
+    margin: 0;
 }
 
 .main-container {

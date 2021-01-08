@@ -1,14 +1,22 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  font-family: "Karla", sans-serif;
 }
 
 .attribution a {
-  color: #3e52a3;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2ab2af;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }
 
 body {
   background-color: #e5eff5;
+  margin: 0;
 }
 
 .main-container {
