@@ -166,6 +166,11 @@ body {
   outline: none;
 }
 
+.main-container .second-content .left-content .btn-signup:hover {
+  background: #e5eff5;
+  color: #c0df34;
+}
+
 .main-container .second-content .right-content {
   width: 50%;
   background-color: #2ab2af;

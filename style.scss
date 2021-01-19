@@ -143,6 +143,11 @@ body {
             .btn-signup:focus {
                 outline: none;
             }
+
+            .btn-signup:hover {
+                background: $light-gray;
+                color: $bright-yellow;
+            }
         }
 
         .right-content {
