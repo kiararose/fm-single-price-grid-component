@@ -162,6 +162,10 @@ body {
   font-size: 16px;
 }
 
+.main-container .second-content .left-content .btn-signup:focus {
+  outline: none;
+}
+
 .main-container .second-content .right-content {
   width: 50%;
   background-color: #2ab2af;

@@ -139,6 +139,10 @@ body {
             .btn-signup {
                 @include btn-signup;
             }
+
+            .btn-signup:focus {
+                outline: none;
+            }
         }
 
         .right-content {
